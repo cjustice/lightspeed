@@ -19,6 +19,6 @@ public class SimpleMovement : MonoBehaviour {
 	}
 
 	void FixedUpdate() {
-		rb.AddForce (speed * Input.GetAxis ("Horizontal"),9.81f, speed * Input.GetAxis ("Vertical"));
+		rb.AddForce (speed * Input.GetAxis ("Horizontal"), 0f, speed * Input.GetAxis ("Vertical"));
 	}
 }
